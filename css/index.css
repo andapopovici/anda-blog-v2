@@ -118,12 +118,11 @@ main,
 footer {
 	padding: 1rem;
 }
+main {
+	margin-block-start: 2.5rem;
+}
 main :first-child {
 	margin-top: 0;
-}
-
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
 }
 
 #skip-link {
