@@ -1,10 +1,9 @@
 ---
-layout: layouts/post.njk
 title: A couple of tools for testing target size
 description: >-
   Quick post outlining a couple of useful tools for testing target sizes on
   websites
-date: 2023-08-02T23:00:00.000Z
+date: 2023-08-02
 tags:
   - accessibility
 ---

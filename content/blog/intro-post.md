@@ -2,10 +2,8 @@
 title: What are you doing?!
 description: Introduction post
 date: 2022-10-28
-scheduled: 2022-10-28
 tags:
   - personal
-layout: layouts/post.njk
 ---
 
 "Do you really want to share your life with the internet?" I asked myself again.

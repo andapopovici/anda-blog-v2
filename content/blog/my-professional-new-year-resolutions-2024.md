@@ -1,8 +1,7 @@
 ---
-layout: layouts/post.njk
 title: My professional new year's resolutions for 2024
 description: Setting up some loose resolutions for what I want to achieve professionally in 2024
-date: 2024-01-03T00:00:00.000Z
+date: 2024-01-03
 tags:
   - engineering
   - accessibility

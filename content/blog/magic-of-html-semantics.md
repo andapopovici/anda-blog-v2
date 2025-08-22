@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: The magic of HTML semantics
 description: A fan post for HTML
 date: 2025-06-13T00:00:00.000Z

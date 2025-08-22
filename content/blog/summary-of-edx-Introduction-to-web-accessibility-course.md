@@ -1,8 +1,7 @@
 ---
-layout: layouts/post.njk
 title: Summary of edX Introduction to Web Accessibility course
 description: A short summary of the Introduction to Web Accessibility course on edX
-date: 2023-11-25T00:00:00.000Z
+date: 2023-11-25
 tags:
   - accessibility
 ---

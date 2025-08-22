@@ -1,8 +1,7 @@
 ---
-layout: layouts/post.njk
 title: Learning about Web Components
 description: Documenting my first step in learning about Web Components
-date: 2024-01-11T00:00:00.000Z
+date: 2024-01-11
 tags:
   - engineering
   - web components

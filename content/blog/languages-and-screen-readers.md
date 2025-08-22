@@ -1,8 +1,7 @@
 ---
-layout: layouts/post.njk
 title: Languages and screen readers
 description: Documenting what I learned about screen readers and the 'lang' attribute
-date: 2024-08-30T00:00:00.000Z
+date: 2024-08-30
 tags:
   - accessibility
   - HTML

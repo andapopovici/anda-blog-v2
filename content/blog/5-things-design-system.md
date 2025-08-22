@@ -3,12 +3,10 @@ title: 5 things I learned working on a design system for a year
 description: >-
   Describing my experience going from product engineering to working on a design
   system
-date: 2022-12-05T00:00:00.000Z
+date: 2022-12-05
 tags:
   - design systems
   - engineering
-layout: layouts/post.njk
-image: 'https://unsplash.com/photos/_H7p-RZUVo4'
 ---
 
 I moved on from being an engineer on the product and marketing website of my company to working on our design system in January 2022. The design system is relatively new, built upon a 14 year old mature Ruby on Rails codebase.
