@@ -1,6 +1,6 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family: "Atkinson Hyperlegible", -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -35,6 +35,16 @@
 	}
 }
 
+/* Type scale */
+:root {
+  --font-step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --font-step-1: clamp(1.4063rem, 1.3423rem + 0.2841vw, 1.5625rem);
+  --font-step-2: clamp(1.7578rem, 1.6779rem + 0.3551vw, 1.9531rem);
+  --font-step-3: clamp(2.1973rem, 2.0974rem + 0.4439vw, 2.4414rem);
+  --font-step-4: clamp(2.7466rem, 2.6217rem + 0.5549vw, 3.0518rem);
+  --font-step-5: clamp(3.4332rem, 3.2772rem + 0.6936vw, 3.8147rem);
+}
+
 
 /* Global stylesheet */
 * {
@@ -52,6 +62,7 @@ body {
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+	font-size: var(--font-step-0);
 }
 html {
 	overflow-y: scroll;
