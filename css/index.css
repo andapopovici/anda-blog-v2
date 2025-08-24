@@ -2,6 +2,7 @@
 :root {
 	--font-family: "Atkinson Hyperlegible", -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family-heading: "Libre Baskerville", serif;
 }
 
 /* Theme colors */
@@ -13,9 +14,11 @@
 	--background-color: #fff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
+	--text-color-link: #0077b6;
+	--text-color-link-active: #7967ac;
 	--text-color-link-visited: #17050F;
+
+	--homepage-post-link-underline-color: #c8b6ff;
 
 	--syntax-tab-size: 2;
 }
@@ -27,11 +30,13 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link: #a3cef1;
+		--text-color-link-active: #c8b6ff;
+		--text-color-link-visited: #c8b6ff;
 
-		--background-color: #15202b;
+		--background-color: #252525;
+
+		--text-color: #fbfbfb;
 	}
 }
 
@@ -106,9 +111,6 @@ li {
 a[href] {
 	color: var(--text-color-link);
 }
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
@@ -118,6 +120,10 @@ blockquote {
 	margin: 0;
 	padding-left: 2rem;
 	border-left: 4px solid var(--color-gray-50);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-heading);
 }
 
 main,
@@ -263,15 +269,17 @@ header {
 .postlist-date {
 	word-spacing: -0.5px;
 }
-.postlist-link {
+a.postlist-link {
+	font-family: var(--font-family-heading);
 	font-size: 1.1875em; /* 19px /16 */
-	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
 	padding-right: .5em;
+	color: var(--text-color);
 	text-underline-position: from-font;
 	text-underline-offset: 0;
-	text-decoration-thickness: 1px;
+	text-decoration-color: var(--homepage-post-link-underline-color);
+	text-decoration-thickness: 3px;
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
@@ -300,5 +308,10 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+/* Homepage */
+.homepage-intro {
+	margin-block-end: 3em;
 }
 
