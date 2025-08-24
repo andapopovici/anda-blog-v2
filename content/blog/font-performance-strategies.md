@@ -41,7 +41,7 @@ Mandy talks us through her strategies for improving font performance on websites
 
 ### Practical tips
 
-- use https://wakamaifondue.com/ to get information about a font and see if there’s anything that’s not in use
+- use [Wakamai Fondue](https://wakamaifondue.com/) to get information about a font and see if there’s anything that’s not in use
 - use [Slice](https://github.com/source-foundry/Slice) to modify variable fonts and keep only the axes you need
 - use the CSS overview in Dev tools which shows you number of occurrences for certain font styles. Alternatively use [her CSS Text Stats tool](https://textlab.dev/tools/css-text-stats)
 
