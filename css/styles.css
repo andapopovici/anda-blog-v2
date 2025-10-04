@@ -76,11 +76,16 @@ textarea:not([rows]) {
 
 /* end CSS reset */
 
+/* Override heading anchors colour for the # as it fails colour contrast */
+main .ha-placeholder {
+  opacity: 0.8;
+}
+
 .debug {
 	border: 1px solid red;
 }
 
-.homepage-intro {
-	max-width: 300px;
-	margin: 0 auto;
+body {
+  max-width: 75ch;
+  margin: 0 auto;
 }
