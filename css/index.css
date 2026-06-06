@@ -21,10 +21,17 @@
 	--homepage-post-link-underline-color: #c8b6ff;
 
 	--syntax-tab-size: 2;
+
+	--btn-background-color: var(--background-color);
+	--btn-color: var(--text-color);
+	--btn-hover-background-color: var(--btn-color);
+	--btn-hover-color: var(--btn-background-color);
+	--btn-pressed-background-color: var(--btn-color);
+	--btn-pressed-color: var(--btn-background-color);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
+[data-theme="auto"] {
+	@media (prefers-color-scheme: dark) {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
 		--color-gray-90: #dad8d8;
@@ -37,6 +44,49 @@
 
 		--text-color: #fbfbfb;
 	}
+}
+
+[data-theme="dark"] {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color-link: #a3cef1;
+	--text-color-link-active: #c8b6ff;
+	--text-color-link-visited: #c8b6ff;
+
+	--background-color: #201f1f;
+
+	--text-color: #fbfbfb;
+}
+
+[data-theme="pride"] {
+	h1, h2, h3, h4, h5, h6 {
+		background: linear-gradient(
+				to right,
+				red 0%,
+				orange 22%,
+				yellow 36%,
+				green 50%,
+				blue 64%,
+				indigo 78%,
+				violet 100%
+		);
+		background-clip: text;
+		color: transparent;
+		display: inline-block;
+	}
+
+	--btn-hover-background-color: linear-gradient(180deg,
+		red 0%,
+		orange 22%,
+		yellow 36%,
+		green 50%,
+		blue 64%,
+		indigo 78%,
+		violet 100%
+	);
+	--btn-pressed-background-color: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
 }
 
 /* Global stylesheet */
@@ -113,6 +163,30 @@ a[href] {
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
+}
+
+button {
+  border-radius: 0.5rem;
+  text-align: inherit;
+  background: var(--btn-background-color);
+	color: var(--btn-color);
+  box-shadow: none;
+  padding: 0.25rem;
+  cursor: pointer;
+  border: none;
+  font: inherit;
+	border: 1px solid var(--btn-color);
+	font-size: 0.7rem;
+}
+
+button:hover {
+	background: var(--btn-hover-background-color);
+	color: var(--btn-hover-color);
+}
+
+button[aria-pressed] {
+	background: var(--btn-pressed-background-color);
+	color: var(--btn-pressed-color);
 }
 
 blockquote {
@@ -237,6 +311,18 @@ header {
 }
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
+}
+
+/* Theme switcher */
+.theme-switcher {
+	display: flex;
+	gap: 0.5rem;
+	font-size: 1rem;
+}
+
+/* Main heading */
+.pronouns {
+	font-size: 80%;
 }
 
 /* Posts list */
