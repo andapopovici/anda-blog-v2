@@ -1,10 +1,13 @@
 // initialise theme from local storage
-const savedTheme = localStorage.getItem("andaBlogTheme");
-const initialTheme = savedTheme ? savedTheme : "auto";
-document.documentElement.setAttribute("data-theme", initialTheme);
+let savedTheme = localStorage.getItem("andaBlogTheme");
+if (!savedTheme) {
+  savedTheme = "auto";
+  localStorage.setItem("andaBlogTheme", savedTheme);
+}
+document.documentElement.setAttribute("data-theme", savedTheme);
 
 // set loaded theme button as aria-pressed
-const selectedButton = document.querySelector(`button[data-theme-value=${initialTheme}]`);
+const selectedButton = document.querySelector(`button[data-theme-value=${savedTheme}]`);
 if (selectedButton) {
   selectedButton.setAttribute("aria-pressed", "true");
 }
