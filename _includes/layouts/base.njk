@@ -43,13 +43,12 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+		<script src="/js/theme.js" defer></script>
 	</head>
 	<body>
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
@@ -59,6 +58,13 @@
 				{%- endfor %}
 				</ul>
 			</nav>
+
+			<div>Theme:
+				<button data-toggle-theme data-theme="auto">Auto</button>
+				<button data-toggle-theme data-theme="light">Light</button>
+				<button data-toggle-theme data-theme="dark">Dark</button>
+				<button data-toggle-theme data-theme="pride">Pride</button>
+			</div>
 		</header>
 
 		<main id="main">

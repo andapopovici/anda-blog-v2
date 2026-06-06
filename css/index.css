@@ -23,7 +23,7 @@
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
@@ -36,6 +36,38 @@
 		--background-color: #201f1f;
 
 		--text-color: #fbfbfb;
+	}
+}*/
+
+html.dark {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color-link: #a3cef1;
+	--text-color-link-active: #c8b6ff;
+	--text-color-link-visited: #c8b6ff;
+
+	--background-color: #201f1f;
+
+	--text-color: #fbfbfb;
+}
+
+html.pride {
+	h1, h2 {
+			background: linear-gradient(
+					to right,
+					red 0%,
+					orange 22%,
+					yellow 36%,
+					green 50%,
+					blue 64%,
+					indigo 78%,
+					violet 100%
+			);
+			background-clip: text;
+			color: transparent;
+			display: inline-block;
 	}
 }
 
