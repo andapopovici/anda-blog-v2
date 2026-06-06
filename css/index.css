@@ -320,6 +320,11 @@ header {
 	font-size: 1rem;
 }
 
+/* Main heading */
+.pronouns {
+	font-size: 80%;
+}
+
 /* Posts list */
 .postlist {
 	counter-reset: start-from var(--postlist-index);
